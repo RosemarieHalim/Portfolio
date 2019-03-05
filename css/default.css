@@ -6,7 +6,7 @@ html {
 
 /* About Page */
 
-p {
+.aboot_me {
   font-size: 1em;
   line-height: 1.5em;
 }
