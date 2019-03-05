@@ -221,7 +221,7 @@ h1 {
   }
 
   .overlay.open {
-    opacity: .9;
+    opacity: .98;
     visibility: visible;
     height: 100%;
     z-index: 1;
