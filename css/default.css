@@ -6,6 +6,11 @@ html {
 
 /* About Page */
 
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
 .box {
   max-width: 2000px;
   margin-top: 10%;
