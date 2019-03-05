@@ -25,7 +25,8 @@ html {
 
 .aboot {
   padding-left: 20px;
-  color: #ff0000;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 /* Main Page */
