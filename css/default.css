@@ -1,15 +1,13 @@
 html {
-    background: #242424;
     height: 100%;
     max-width: 100%;
 } 
 
-/* About Page */
-
-.aboot_me {
-  font-size: 1em;
-  line-height: 1.5em;
+.pagestyle {
+  background: #242424;
 }
+
+/* About Page */
 
 .box {
   max-width: 2000px;
@@ -33,6 +31,10 @@ html {
 
 .home {
   margin: 0 auto;
+}
+
+.frontpage {
+  background-image: url(../img/rose.jpg)
 }
 
 @-webkit-keyframes fadeInDown {
@@ -78,6 +80,11 @@ margin-top: 18%;
 text-transform: uppercase;
 font: bold 95pt 'Montserrat';
 line-height: 95%;
+text-shadow:
+		-0.5px -0.5px 0 rgb(7, 46, 22),
+		0.5px -0.5px 0 rgb(7, 46, 22),
+		-0.5px 0.5px 0 rgb(7, 46, 22),
+		0.5px 0.5px 0 rgb(7, 46, 22);
 }
 
 .homeheadert {
@@ -118,6 +125,7 @@ h1 {
     height: 75px;
     width: 75px;
     cursor: pointer;
+    z-index: 3;
   }
 
 /* this is for the hamburger */
@@ -141,7 +149,7 @@ h1 {
     display: inline-block;
     position: relative;
     text-align: center;
-    color: #86BF73;
+    color: rgb(157, 185, 147);
     text-decoration: none;
     font-size: 20px;
     overflow: hidden;
@@ -151,7 +159,7 @@ h1 {
   .container a:after {
     content: '';
     position: absolute;
-    background: #86BF73;
+    background: rgb(157, 185, 147);
     height: 2px;
     width: 0%;
     transform: translateX(-50%);
@@ -171,7 +179,7 @@ h1 {
     height: 27px;
     width: 35px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1000;
     transition: opacity .25s ease;
   }
 
@@ -216,7 +224,7 @@ h1 {
   
   .overlay {
     position: fixed;
-    background: #86BF73;
+    background: rgb(157, 185, 147);
     top: 0;
     left: 0;
     width: 100%;
@@ -231,7 +239,7 @@ h1 {
     opacity: .98;
     visibility: visible;
     height: 100%;
-    z-index: 1;
+    z-index: 100;
 
   }
 
@@ -482,7 +490,7 @@ h2 {
 }
 
 .progressblue {
-    background-color: #70C1B3;
+    background-color:  rgb(206, 148, 148);
 }
 
 @-webkit-keyframes progress-htmlcss {
@@ -651,7 +659,7 @@ h2 {
     margin: 0 auto;
     padding-top: 50px;
     margin-bottom: 50px;
-    font: 300 60px 'Montserrat;'
+    font: 300 60px 'Montserrat';
     letter-spacing: 6px;
     color: #fff;
     margin-bottom: 25px;
@@ -911,3 +919,240 @@ h2 {
       width: 99%;
     }
   }
+
+  /* Editorial Page */
+
+  .editorial_body {
+    background-image: url(../img/motely_page.jpg);
+    width: 100%;
+  }
+
+  .editorial_page {
+    z-index: 1;
+    position: relative;
+    max-width: 100%;
+  }
+
+  .design_para_one {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    top: 1050px;
+    color: rgb(37, 37, 37);
+    background-color:  rgb(211, 180, 180);
+  }
+
+  .head {
+    font-size: 30pt;
+  }
+
+  .para {
+    font-size: 24pt;
+  }
+
+  /* Carousel */
+
+  .carousel {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* max-width: 900px; */
+    /* max-height: 550px;    */
+    overflow: hidden;
+  position: absolute;
+  top: 1750px;
+}
+
+.carousel-item {
+  visibility:visible;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+      -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
+    /* position: relative; */
+    background-color: #fff;
+    flex-shrink: 0;
+   -webkit-flex-shrink: 0;
+    position: absolute;
+    z-index: 2;
+  transition: 0.6s all linear;
+}
+
+.carousel-item__info {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+    display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  
+  order: 1;
+  left: 0;
+  /* margin: auto; */
+  padding: 0 40px;
+  width: 40%;
+}
+
+.carousel-item__image {
+    width: 100%;
+    height: 100%;
+    order: 1;
+    align-self: flex-end;
+    flex-basis: 100%;
+  
+      -webkit-order: 1;
+    -webkit-align-self: flex-end;
+    -webkit-flex-basis: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: absolute;
+  transform: translateX(100%);
+  transition: 0.6s all ease-in-out;
+}
+
+.carousel-item__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #7E7E7E;    
+    font-weight: 700;
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all ease-in-out;
+}
+
+.carousel-item__title {
+    margin: 15px 0 0 0;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #2C2C2C;
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s all ease-in-out;
+}
+
+.carousel-item__description {
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s all ease-in-out;
+    margin-top: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #7e7e7e;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+
+.carousel-item--1 .carousel-item__image{
+  background-image: url(../img/carousel_one.jpg);
+}
+
+
+.carousel-item--2 .carousel-item__image{
+  background-image: url(../img/carousel_two.jpg);
+}
+
+.carousel-item--3 .carousel-item__image{
+  background-image: url(../img/carousel_three.jpg);
+}
+
+.carousel-item--4 .carousel-item__image{
+  background-image: url(../img/carousel_four.jpg);
+}
+
+
+
+
+.carousel-item__container{
+padding: 250px;
+background-color: rgb(255, 255, 255);
+}
+
+.carousel-item__btn {
+    width: 35%;
+    color: #2C2C2C;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0;
+    width: 35%;
+    font-weight: 700;
+  text-decoration: none;
+      transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s all ease-in-out;
+}
+
+.carousel__nav {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background-color: #fff;
+  bottom: 0;
+}
+
+.carousel__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+  fill: #5d5d5d;
+}
+
+.carousel__arrow {
+    cursor: pointer;
+    display: inline-block;
+    padding: 11px 15px;
+    position: relative;
+}
+
+.carousel__arrow:nth-child(1):after {
+    content:'';
+    right: -3px;
+    position: absolute;
+    width: 1px;
+    background-color: #b0b0b0;
+    height: 14px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.active{
+   z-index: 2;
+  display: flex;
+  visibility:visible;
+}
+
+.active .carousel-item__subtitle, .active .carousel-item__title, .active .carousel-item__description,.active .carousel-item__btn{
+    transform: translateY(0);
+    opacity: 1;
+  transition: 0.6s all ease-in-out;
+    visibility: visible;
+}
+
+
+
+.active .carousel-item__image{ 
+transition: 0.6s all ease-in-out;
+transform: translateX(0);
+}

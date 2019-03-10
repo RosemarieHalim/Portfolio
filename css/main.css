@@ -28,21 +28,21 @@
   }
   
   .image .btne {
-    top: 29%;
+    top: 27%;
   }
 
   .image .btns {
-    top: 64.4%;
+    top: 63.5%;
   }
 
   .image .btnw {
-    top: 95%;
+    top: 93%;
   }
 
   button:hover {
-    background: #3f3f3f;
-    color: #d4d4d4b0;
-    border: 3px solid #d4d4d4b0;
+    background: #ffffff00;
+    color: #ffffff;
+    border: 3px solid #ffffff;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
   }
@@ -195,6 +195,7 @@
       height: 75px;
       width: 75px;
       cursor: pointer;
+      z-index: 2;
     }
 
   .pic {
@@ -217,20 +218,7 @@
   header h1 {
     margin: 0;
     margin-top: 20%;
-    font-size: 200pt;
-  }
-
-  header h3 {
-    margin:0;
-    color: #86BF73;
-    font-size: 32pt;
-  }
-  
-  header a {
-    color:#86BF73;
-    opacity:0.5;
-    text-decoration:none;
-    font-size: 24pt;
+    font-size: 200pt
   }
   
   header a:hover {
@@ -244,13 +232,9 @@
     width:70%;
     margin:5% 15%;
     padding:2em 0; */
-    z-index: 0;
+    z-index: 1;
   }
   
-  .h1 h1 {
-    text-align: center;
-  }
-      
   h1 {   
     font-family:'Maven Pro', sans-serif;
     font-weight:300;
@@ -304,7 +288,7 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    color: #1abc9c;
+    color: rgb(157, 185, 147);
     text-decoration: none;
     font-size: 20px;
     overflow: hidden;
@@ -313,7 +297,7 @@
   .container a:after {
     content: '';
     position: absolute;
-    background:#8FCC85;
+    background: rgb(157, 185, 147);
     height: 2px;
     width: 0%;
     transform: translateX(-50%);
@@ -332,7 +316,7 @@
     height: 27px;
     width: 35px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1001;
     transition: opacity .25s ease;
   }
   .button_container:hover {
@@ -370,7 +354,7 @@
   
   .overlay {
     position: fixed;
-    background:#8FCC85;
+    background: rgb(157, 185, 147);
     top: 0;
     left: 0;
     width: 100%;
@@ -384,7 +368,7 @@
     opacity: .98;
     visibility: visible;
     height: 100%;
-    z-index: 2;
+    z-index: 100;
   }
   .overlay.open li {
     animation: fadeInRight .5s ease forwards;
