@@ -18,13 +18,13 @@ html {
 }
 
 .imgbox {
-  padding: 2px;
+  padding: 0px;
 }
 
 .aboot {
   padding-left: 20px;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 12.5pt;
+  line-height: 20pt;
 }
 
 /* Main Page */
@@ -179,7 +179,7 @@ h1 {
     height: 27px;
     width: 35px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1001;
     transition: opacity .25s ease;
   }
 
@@ -240,7 +240,6 @@ h1 {
     visibility: visible;
     height: 100%;
     z-index: 100;
-
   }
 
   .overlay.open li {
@@ -936,7 +935,6 @@ h2 {
   .design_para_one {
     z-index: 2;
     position: absolute;
-    text-align: center;
     padding-left: 175px;
     padding-right: 175px;
     padding-top: 75px;
@@ -947,11 +945,13 @@ h2 {
   }
 
   .head {
+    text-align: center;
     font-size: 30pt;
+    line-height: 60pt;
   }
 
   .para {
-    font-size: 24pt;
+    font-size: 20pt;
   }
 
   /* Carousel */
@@ -1156,3 +1156,51 @@ background-color: rgb(255, 255, 255);
 transition: 0.6s all ease-in-out;
 transform: translateX(0);
 }
+
+/* Webdesign Page */
+
+.webdesign_body {
+  background-image: url(../img/cosmos_page.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cosmostitle {
+  max-width: 100%;
+  position: relative;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.design_para_two {
+  position: absolute;
+  top: 1200px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.webmockup {
+  width: 100%;
+}
+

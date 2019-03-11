@@ -28,15 +28,19 @@
   }
   
   .image .btne {
-    top: 27%;
+    top: 900px;
   }
 
   .image .btns {
-    top: 63.5%;
+    top: 2025px;
   }
 
   .image .btnw {
-    top: 93%;
+    top: 3000px;
+  }
+
+  .image .btna {
+    top: 4100px;
   }
 
   button:hover {
@@ -279,7 +283,7 @@
     top: 40%;
     left: 0;
     margin: 0 auto;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat';
   }
   .container p {
     font-size: 20px;
@@ -392,7 +396,7 @@
     top: 45%;
     transform: translateY(-50%);
     font-size: 50px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 400;
     text-align: center;
   }
