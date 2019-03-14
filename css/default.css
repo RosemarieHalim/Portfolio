@@ -11,7 +11,7 @@ html {
 
 .project_slide_editorial  {
   position: absolute;
-  top: 2500px;
+  top: 2445px;
   width: 100%;
 }
 
@@ -1399,9 +1399,8 @@ h2 {
     padding-right: 175px;
     padding-top: 75px;
     padding-bottom: 75px;
-    top: 1050px;
+    top: 1000px;
     color: rgb(37, 37, 37);
-    background-color:  rgb(211, 180, 180);
   }
 
   .head {

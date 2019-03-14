@@ -87,40 +87,42 @@ $(function(){
 
 // Js for the carousel at the bottom of each project page
 
-(function ( $ ) {
+//js interferes with the hamburger and other carousel!!!!!!
 
-	function posts_carousel() {
-		if( window.innerWidth > 1158 ) {
-			$('.post_set').first().addClass('first');
-			$('.post_set').last().addClass('last');
+// (function ( $ ) {
 
-			$('.post-tiles .prev-button').click(function() {
-				if( !$('.post_set.active').hasClass('first') ) {
-					$('.post_set.active').removeClass('active').prev('.post_set').addClass('active');
-				}
-				else {
-					$('.post_set.active').removeClass('active');
-					$('.post_set').last().addClass('active');
-				}
-			});
+// 	function posts_carousel() {
+// 		if( window.innerWidth > 1158 ) {
+// 			$('.post_set').first().addClass('first');
+// 			$('.post_set').last().addClass('last');
 
-			$('.post-tiles .next-button').click(function() {
-				if( !$('.post_set.active').hasClass('last') ) {
-					$('.post_set.active').removeClass('active').next('.post_set').addClass('active');
-				}
-				else {
-					$('.post_set.active').removeClass('active');
-					$('.post_set').first().addClass('active');
-				}
-			});
-		}
-		else {
-			$('.post_set').removeClass('active');
-			$('.post_set').first().addClass('active');
-		}
-	}
-	posts_carousel();
+// 			$('.post-tiles .prev-button').click(function() {
+// 				if( !$('.post_set.active').hasClass('first') ) {
+// 					$('.post_set.active').removeClass('active').prev('.post_set').addClass('active');
+// 				}
+// 				else {
+// 					$('.post_set.active').removeClass('active');
+// 					$('.post_set').last().addClass('active');
+// 				}
+// 			});
 
-	$(window).resize(function() {
-		posts_carousel();
-	});
+// 			$('.post-tiles .next-button').click(function() {
+// 				if( !$('.post_set.active').hasClass('last') ) {
+// 					$('.post_set.active').removeClass('active').next('.post_set').addClass('active');
+// 				}
+// 				else {
+// 					$('.post_set.active').removeClass('active');
+// 					$('.post_set').first().addClass('active');
+// 				}
+// 			});
+// 		}
+// 		else {
+// 			$('.post_set').removeClass('active');
+// 			$('.post_set').first().addClass('active');
+// 		}
+// 	}
+// 	posts_carousel();
+
+// 	$(window).resize(function() {
+// 		posts_carousel();
+// 	});
