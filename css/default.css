@@ -460,7 +460,7 @@ html {
 }
 
 .imgbox {
-
+  height: 450px;
 }
 
 .aboot {
@@ -1543,9 +1543,9 @@ h2 {
 }
 
 
-.carousel-item__container{
+/* .carousel-item__container{
 
-}
+} */
 
 .carousel-item__btn {
     width: 35%;
