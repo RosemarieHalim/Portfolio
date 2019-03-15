@@ -779,8 +779,8 @@ h1 {
 .contant {
   float:left;
   width:100%;
-  margin-top:5%;
-  padding:2em 0;
+  margin: 0 auto;
+  padding: 20px 0;
   color: #FFF;
 }  
 
@@ -1597,22 +1597,20 @@ h2 {
     margin-top: -7px;
 }
 
-.active{
-   z-index: 1001;
+.acteve{
+   z-index: 1;
   display: flex;
   visibility:visible;
 }
 
-.active .carousel-item__subtitle, .active .carousel-item__title, .active .carousel-item__description,.active .carousel-item__btn{
+.acteve .carousel-item__subtitle, .acteve .carousel-item__title, .acteve .carousel-item__description,.acteve .carousel-item__btn{
     transform: translateY(0);
     opacity: 1;
   transition: 0.6s all ease-in-out;
     visibility: visible;
 }
 
-
-
-.active .carousel-item__image{ 
+.acteve .carousel-item__image{ 
 transition: 0.6s all ease-in-out;
 transform: translateX(0);
 }
