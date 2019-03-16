@@ -9,6 +9,23 @@ html {
 
 /* Slider to switch Project Pages */
 
+.tile-image_motley {
+  width: 100%;
+  
+}
+
+.tile-image_strength {
+  width: 100%;
+}
+
+.tile-image_cosmos {
+  width: 100%;
+}
+
+.tile-image_fashion {
+  width: 100%;
+}
+
 .project_slide_editorial  {
   position: absolute;
   top: 2445px;
@@ -415,37 +432,6 @@ html {
   background: #fff
 }
 
-/* .post-tiles.popular-tiles .post_set {
-  display: none
-}
-
-.post-tiles.popular-tiles .post_set.active {
-  display: block
-}
-
-.post-tiles.popular-tiles.bottom-of-page {
-  margin-bottom: 1px
-}
-
-.post-tiles.related-tiles {
-  position: relative
-}
-
-.post-tiles.related-tiles .post_set {
-  display: none
-}
-
-.post-tiles.related-tiles .post_set.active {
-  display: block
-}
-
-.post-tiles.related-tiles .prev-button {
-  left: -20px
-}
-
-.post-tiles.top-of-page {
-  margin-top: 0
-} */
 
 
 
@@ -1183,7 +1169,7 @@ h2 {
   .contact-list {
     margin-top: 75px;
     list-style-type: none;
-    margin-left: -10px;
+    padding-left: 0;
     padding-right: 20px;
   }
   
