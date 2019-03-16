@@ -1652,8 +1652,8 @@ transform: translateX(0);
 .design_para_two {
   position: absolute;
   top: 1200px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .webmockup {
@@ -1688,7 +1688,7 @@ transform: translateX(0);
 
 .design_para_four {
   text-align: center;
-  margin: 1200px 150px 400px 150px;
+  margin: 55% 15% 5% 15%;
 }
 
 .fashion_img {
