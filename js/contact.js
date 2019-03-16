@@ -23,25 +23,20 @@ $(window).scroll( function(){
   });
   
 
-
-// issue with line 29, not sure where this goes
-
-  // $(function() {
-  //   $('a[href*=#]:not([href=#])').click(function() {
-  //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //       var target = $(this.hash);
-  //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //       if (target.length) {
-  //         $('html,body').animate({
-  //           scrollTop: target.offset().top
-  //         }, 1000);
-  //         return false;
-  //       }
-  //     }
-  //   });
-  // });
-
-
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 
   // this is for hamburger
 
@@ -135,7 +130,6 @@ $(function(){
 
 
 // CODE FOR SCROLL FEATURE FOR PROJECTS ON PORTFOLIO.HTML
-    // issues: doesn't scroll when clicking on the sections, also supposed to start on first project, but starts on front page.
 
 
 
@@ -266,6 +260,17 @@ $(function(){
 //                if (typeof  options.onScroll === 'function') options.onScroll(this.scrollPosition);
 //            },
 
+//            scrollPercentage: function () {
+//                var body = document.body,
+//                    html = document.documentElement,
+//                    documentHeight = Math.max(body.scrollHeight, body.offsetHeight,
+//                        html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+//                var percentage = Math.round(this.scrollPosition / (documentHeight - window.innerHeight) * 100);
+//                if (percentage < 0)  percentage = 0;
+//                if (percentage > 100)  percentage = 100;
+//                return percentage;
+//            },
 
 //            doSmoothScroll: function (e) {
 //                if (e.target.nodeName === 'A') {
@@ -314,30 +319,30 @@ $(function(){
 //    // APP init
 //    //////////////////////
 
-//   //  var scrollToTopBtn = document.querySelector('.Scroll-to-top'),
-//   //      steps = document.querySelectorAll('.js-scroll-step'),
-//   //      navigationContainer = document.querySelector('.Quick-navigation'),
-//   //      links = navigationContainer.querySelectorAll('a'),
-//   //      progressIndicator = document.querySelector('.Scroll-progress-indicator');
+//    var scrollToTopBtn = document.querySelector('.Scroll-to-top'),
+//        steps = document.querySelectorAll('.js-scroll-step'),
+//        navigationContainer = document.querySelector('.Quick-navigation'),
+//        links = navigationContainer.querySelectorAll('a'),
+//        progressIndicator = document.querySelector('.Scroll-progress-indicator');
 
-//   //  ScrollManager.init({
-//   //      steps: steps,
-//   //      scrollToTopBtn: scrollToTopBtn,
-//   //      navigationContainer: navigationContainer,
-//   //      links: links,
+//    ScrollManager.init({
+//        steps: steps,
+//        scrollToTopBtn: scrollToTopBtn,
+//        navigationContainer: navigationContainer,
+//        links: links,
      
-//   //      // Customize onScroll behavior
-//   //      onScroll: function () {
-//   //          var percentage = ScrollManager.scrollPercentage();
-//   //          percentage >= 90 ? scrollToTopBtn.classList.add('visible') : scrollToTopBtn.classList.remove('visible');
+//        // Customize onScroll behavior
+//        onScroll: function () {
+//            var percentage = ScrollManager.scrollPercentage();
+//            percentage >= 90 ? scrollToTopBtn.classList.add('visible') : scrollToTopBtn.classList.remove('visible');
 
-//   //          if (percentage >= 10) {
-//   //              progressIndicator.innerHTML = percentage + "%";
-//   //              progressIndicator.classList.add('visible');
-//   //          } else {
-//   //              progressIndicator.classList.remove('visible');
-//   //          }
-//   //      },
+//            if (percentage >= 10) {
+//                progressIndicator.innerHTML = percentage + "%";
+//                progressIndicator.classList.add('visible');
+//            } else {
+//                progressIndicator.classList.remove('visible');
+//            }
+//        },
      
 //    // Behavior when a step changes
 //    // default : highlight links 
@@ -359,3 +364,54 @@ $(function(){
 //    //////////////////////
 
 // })();
+
+
+
+// CONTACT PAGE JS
+
+$(function () {
+
+  // init the validator
+  // validator files are included in the download package
+  // otherwise download from http://1000hz.github.io/bootstrap-validator
+
+  $('#contact-form').validator();
+
+
+  // when the form is submitted
+  $('#contact-form').on('submit', function (e) {
+
+      // if the validator does not prevent form submit
+      if (!e.isDefaultPrevented()) {
+          var url = "contact.php";
+
+          // POST values in the background the the script URL
+          $.ajax({
+              type: "POST",
+              url: url,
+              data: $(this).serialize(),
+              success: function (data)
+              {
+                  // data = JSON object that contact.php returns
+
+                  // we recieve the type of the message: success x danger and apply it to the 
+                  var messageAlert = 'alert-' + data.type;
+                  var messageText = data.message;
+
+                  // let's compose Bootstrap alert box HTML
+                  var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                  
+                  // If we have messageAlert and messageText
+                  if (messageAlert && messageText) {
+                      // inject the alert to .messages div in our form
+                      $('#contact-form').find('.messages').html(alertBox);
+                      // empty the form
+                      $('#contact-form')[0].reset();
+                  }
+              }
+          });
+          return false;
+      }
+  })
+});
+

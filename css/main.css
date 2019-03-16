@@ -203,11 +203,12 @@
     }
 
   .pic {
-  background-image: url("img/rose.jpg");
+  /* background-image: url("../img/rose.jpg"); */
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 2;
   }
 
   header { 
@@ -217,6 +218,7 @@
     background:#252525;
     color:rgb(255, 255, 255);
     height: 100%;
+    z-index: 2;
   }
   
   header h1 {
@@ -469,7 +471,7 @@
   .Quick-navigation-item:hover,
   .Quick-navigation-item.current {
     color: #fff;
-    
+    text-decoration: none;
   }
   #A {
     background-color: white;
