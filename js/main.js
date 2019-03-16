@@ -84,7 +84,6 @@ $(function(){
   }
 });
 
-
 // Js for the carousel at the bottom of each project page
 
 //js interferes with the hamburger and other carousel!!!!!!
@@ -126,3 +125,5 @@ $(function(){
 // 	$(window).resize(function() {
 // 		posts_carousel();
 // 	});
+
+
