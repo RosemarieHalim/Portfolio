@@ -1213,16 +1213,19 @@ h2 {
     font-size: 2.3rem;
     text-align: center;
     width: 100%;
+    padding: 5px;
   }
   
   .social-media-list li a {
     color: #fff;
+    padding: 5px;
   }
   
   .social-media-list li {
-    position: relative; 
+    /* position: relative; 
     top: 0;
-    left: -20px;
+    left: -20px; */
+    
     display: inline-block;
     height: 70px;
     width: 70px;
@@ -1235,11 +1238,9 @@ h2 {
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:after {
+  /* .social-media-list li:after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -1247,7 +1248,9 @@ h2 {
     opacity: 0;
     box-shadow: 0 0 0 1px #fff;
     transition: all .2s ease-in-out;
-  }
+    margin-left: -53px;
+    padding: 10px;
+  } */
   
   .social-media-list li:hover {
     background-color: #fff; 
@@ -1272,6 +1275,8 @@ h2 {
 
   .line {
       border-color: #FFF;
+      margin-top: 10px;
+      margin-bottom: 10px;
   }
   
   /* Begin Media Queries*/

@@ -1,5 +1,3 @@
-//  javazcript not working
-
 //this is where we apply opacity to the arrow
 $(window).scroll( function(){
 
