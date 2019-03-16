@@ -773,7 +773,7 @@ h1 {
 
 /* This is Experience Page */
 
-* {
+.experience_pagestyle {
     margin: 0px;
     padding: 0;
 }
@@ -827,6 +827,7 @@ h2 {
     min-width: 350px;
     margin: 5% auto;
     list-style: none;
+    padding: 0;
 }
 
 .skills-bar-container li {
