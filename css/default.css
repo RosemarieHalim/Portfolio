@@ -1627,8 +1627,12 @@ transform: translateX(0);
 
 /* Webdesign Page */
 
-.webdesign_body {
+.web_body {
   background-color: rgb(219, 247, 251);
+}
+
+.webdesign_page {
+  
   width: 100%;
   top: 0;
   left: 0;
