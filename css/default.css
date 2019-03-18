@@ -1609,9 +1609,14 @@ transform: translateX(0);
 /* Webdesign Page */
 
 .webdesign_body {
-  background-image: url(../img/cosmos_page.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: rgb(219, 247, 251)
+}
+
+.cosmostop {
+  top: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .cosmostitle {
@@ -1620,6 +1625,8 @@ transform: translateX(0);
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   animation-duration: 5s;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 @-webkit-keyframes fadeIn {
