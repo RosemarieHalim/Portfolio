@@ -27,8 +27,8 @@ html {
 }
 
 .project_slide_editorial  {
-  position: absolute;
-  top: 2445px;
+  position: relative;
+  padding-top: 60px;
   width: 100%;
 }
 
@@ -1379,39 +1379,34 @@ h2 {
     box-sizing: border-box;
   }
   
-  .editorial_page, .editorial_body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100%;
-      display: flex;
-      display: -webkit-flex;
-      justify-content: center;
-    -webkit-justify-content: center;
-      align-items: center;
-    -webkit-align-items: center;
+  .editorial_top_page {
+    width: 100%;
+  }
+
+  .editorial_top {
+    position: relative;
+    width: 100%;
   }
 
   .editorial_body {
     background-image: url(../img/motely_page.jpg);
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: 100%;
   }
 
   .editorial_page {
     z-index: 1;
     position: relative;
-    max-width: 100%;
+    width: 100%;
   }
 
   .design_para_one {
     z-index: 2;
-    position: absolute;
+    position: relative;
     padding-left: 175px;
     padding-right: 175px;
     padding-top: 75px;
     padding-bottom: 75px;
-    top: 950px;
     color: rgb(37, 37, 37);
   }
 
@@ -1430,12 +1425,11 @@ h2 {
   .carousel {
     width: 100%;
     height: 100%;
-    top:1500px;
+    position: relative;
     /* display: flex;
     max-width: 900px;
     max-height: 550px;   
-    overflow: hidden;
-  position: relative; */
+    overflow: hidden; */
 }
 
 .carousel-item {
