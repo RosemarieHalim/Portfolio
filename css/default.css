@@ -7,6 +7,10 @@ html {
   background: #242424;
 }
 
+body {
+  font-size: calc(14px + (26-14) * ((100vw - 300px) / (1600 - 300)));
+}
+
 /* Slider to switch Project Pages */
 
 .tile-image_motley {
@@ -40,7 +44,6 @@ html {
 
 .project_slide_strength  {
   position: relative;
-  padding-top: 60px;
   width: 100%;
 }
 
@@ -1753,6 +1756,6 @@ transform: translateX(0);
 }
 
 .fashion_img img {
-  max-width: 500px;
+  max-width: 450px;
   padding: 25px;
 }
