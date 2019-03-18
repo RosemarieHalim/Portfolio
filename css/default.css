@@ -454,14 +454,13 @@ html {
 }
 
 .aboot {
-  /* width: 700px; */
   padding-left: 5vw;
   font-size: 1vw;
   line-height: 1.5vw;
 }
 
 .aboot_box {
-  width: 700px;
+  width: 50vw;
   display: inline-block;
 }
 
@@ -574,7 +573,6 @@ h1 {
  .navbar-brand {
     color: rgb(255, 255, 255);
     opacity: 1;
-    font-family:'Montserrat';
     position: fixed;
     top: 3%;
     left: 1.5%;
