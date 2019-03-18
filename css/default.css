@@ -7,10 +7,6 @@ html {
   background: #242424;
 }
 
-body {
-  font-size: calc(14px + (26-14) * ((100vw - 300px) / (1600 - 300)));
-}
-
 /* Slider to switch Project Pages */
 
 .tile-image_motley {
@@ -128,7 +124,7 @@ body {
   padding-left: 60px
 }
 
-.item,
+/* .item,
 .two-quarters,
 .three-sixths,
 .four-eighths,
@@ -237,7 +233,7 @@ body {
 
 .eleven-twelfths {
   width: 45.833%
-}
+} */
 
 .post-tiles,
 .shop-tiles {
@@ -514,7 +510,7 @@ body {
 .homeheadero {
 margin: 0 auto;
 text-transform: uppercase;
-font: bold 95pt 'Montserrat';
+font: bold 6.5vw 'Montserrat';
 line-height: 95%;
 text-shadow:
 		-0.5px -0.5px 0 rgb(7, 46, 22),
@@ -525,7 +521,7 @@ text-shadow:
 
 .homeheadert {
 margin: 0 auto;
-font: normal 45pt 'Montserrat';
+font: normal 4vw 'Montserrat';
 text-align: center;
 vertical-align: 0 auto;
 text-shadow:
