@@ -1646,7 +1646,7 @@ transform: translateX(0);
 .cosmostop {
   top: 0px;
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
 
@@ -1682,10 +1682,10 @@ transform: translateX(0);
 }
 
 .design_para_two {
-  position: absolute;
-  top: 1200px;
+  position: relative;
   padding-left: 15%;
   padding-right: 15%;
+  
 }
 
 .webmockup {
