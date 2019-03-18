@@ -1647,7 +1647,7 @@ transform: translateX(0);
 }
 
 .cosmostitle {
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
