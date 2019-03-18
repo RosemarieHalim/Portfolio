@@ -45,8 +45,8 @@ html {
 }
 
 .project_slide_atelier  {
-  position: absolute;
-  top: 2500px;
+  position: relative;
+  padding-top: 60px;
   width: 100%;
 }
 
@@ -1711,22 +1711,34 @@ transform: translateX(0);
 
 /* Atelier Fashion Page */
 
+.fashiontop {
+  position: relative;
+}
+
+.fashion_top_img {
+  width: 100%;
+}
+
 .fashion_page {
   background-image: url(../img/fashion_page.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 1900px;
+  width: 100%;
 }
 
 .design_para_four {
   text-align: center;
-  margin: 55% 15% 5% 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+  position: relative;
+  width: 100%;
 }
 
 .fashion_img {
   position: relative;
   margin: 0 auto;
   text-align: center;
+  padding-top: 50px;
 }
 
 .fashion_img img {
