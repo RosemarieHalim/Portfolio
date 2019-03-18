@@ -460,7 +460,11 @@ html {
 /* Main Page */
 
 .home {
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .frontpage {
@@ -506,7 +510,6 @@ html {
 
 .homeheadero {
 margin: 0 auto;
-margin-top: 18%;
 text-transform: uppercase;
 font: bold 95pt 'Montserrat';
 line-height: 95%;
@@ -521,6 +524,22 @@ text-shadow:
 margin: 0 auto;
 font: normal 45pt 'Montserrat';
 text-align: center;
+vertical-align: 0 auto;
+text-shadow:
+		-0.5px -0.5px 0 rgb(7, 46, 22),
+		0.5px -0.5px 0 rgb(7, 46, 22),
+		-0.5px 0.5px 0 rgb(7, 46, 22),
+		0.5px 0.5px 0 rgb(7, 46, 22);
+}
+
+.content_home {
+  position: relative;
+  top: 30%;
+  float:left;
+  width:70%;
+  margin:5% 15%;
+  padding:2em 0;
+  color: #FFF;
 }
 
 
@@ -1609,7 +1628,15 @@ transform: translateX(0);
 /* Webdesign Page */
 
 .webdesign_body {
-  background-color: rgb(219, 247, 251)
+  background-color: rgb(219, 247, 251);
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.web_head {
+  width: 100vw;
 }
 
 .cosmostop {
@@ -1621,12 +1648,13 @@ transform: translateX(0);
 
 .cosmostitle {
   max-width: 100%;
-  position: relative;
+  position: absolute;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   animation-duration: 5s;
   margin: 0 auto;
   z-index: 2;
+  top: 0;
 }
 
 @-webkit-keyframes fadeIn {
