@@ -39,8 +39,8 @@ html {
 }
 
 .project_slide_strength  {
-  position: absolute;
-  top: 3300px;
+  position: relative;
+  padding-top: 60px;
   width: 100%;
 }
 
@@ -1435,7 +1435,7 @@ h2 {
 .carousel-item {
   visibility:visible;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     align-items: center;
     justify-content: flex-end;
@@ -1688,17 +1688,34 @@ transform: translateX(0);
 
 /* Strength Page */
 
+.strength_top {
+  width: 100%;
+  position: relative;
+}
+
+.strength_top_img {
+  width: 100%;
+}
+
+.strength_img {
+  width: 100%;
+  position: relative;
+}
+
+.strength_project_img {
+  width: 100%;
+}
+
 .strength_body {
   background-image: url(../img/strength_page.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 3900px;
+  height: 100%;
 }
 
 .design_para_three {
   width: 100%;
-  position: absolute;
-  top: 1000px;
+  position: relative;
   padding-left: 15%;
   padding-right: 15%;
 }
