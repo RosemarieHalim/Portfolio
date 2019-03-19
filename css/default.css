@@ -52,7 +52,7 @@ html {
 .grid {
   list-style: none;
   margin: 0;
-  padding: 25px 150px 0 150px;
+  padding: 2vw 5vw 0 5vw;
   margin-left: -30px;
   text-align: center;
 }
@@ -1858,6 +1858,7 @@ transform: translateX(0);
 
 .fashion_top_img {
   width: 100%;
+  padding-bottom: 2vw;
 }
 
 .fashion_page {
@@ -1883,6 +1884,41 @@ transform: translateX(0);
 }
 
 .fashion_img img {
-  max-width: 450px;
-  padding: 25px;
+  width: 25vw;
+  padding: 2vw;
+}
+
+@media screen and (max-width: 569px) {
+  .para {
+    font-size: 10.25pt;
+    margin-bottom: 0;
+  }
+
+  .head {
+    text-align: center;
+    font-size: 12pt;
+    line-height: 20pt;
+  }
+
+  .design_para_four {
+    text-align: left;
+    padding-left: 10%;
+    padding-right:10%;
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(164, 175, 167), rgb(194, 200, 196));
+  }
+
+  .fashion_img img {
+    width: 70vw;
+    padding: 5vw;
+  }
+
+  .fashion_img {
+    background-image: linear-gradient(to right, rgb(164, 175, 167), rgb(194, 200, 196));
+  }
+
+  .project_slide_atelier {
+    background-image: linear-gradient(to right, rgb(164, 175, 167), rgb(194, 200, 196));
+  }
 }
