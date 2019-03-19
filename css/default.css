@@ -840,8 +840,8 @@ h2 {
 
 .skills-bar-container {
     position: relative;
-    width: 40%;
-    min-width: 350px;
+    /* width: 40%;
+    min-width: 350px; */
     margin: 5% auto;
     list-style: none;
     padding: 0;
@@ -881,6 +881,27 @@ h2 {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
+@media screen and (max-width: 569px){
+  #left {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #right {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .skills-bar-container li {
+    min-width: 100%;
+  }
+}
+
 
 #progress-htmlcss {
     -webkit-animation-name: progress-htmlcss;
@@ -1328,7 +1349,6 @@ h2 {
     }
     .direct-contact-container, .form-horizontal {
       float: none;
-      margin: 10px;
       width: 100%;
     }  
     .direct-contact-container {
