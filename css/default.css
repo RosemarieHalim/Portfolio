@@ -1900,6 +1900,70 @@ transform: translateX(0);
     line-height: 20pt;
   }
 
+  .design_para_one {
+    text-align: left;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(181, 184, 193), rgb(227, 229, 242), rgb(181, 184, 193)); 
+  }
+
+  .carousel-item__info {
+     height: 100%;
+     width: 50%;
+  }
+
+  .carousel-item__image {
+    width: 50%;
+  }
+
+  .carousel-item__description {
+  font-size: 7pt;
+  line-height: 10pt;
+  margin-top: 0pt;
+  margin-bottom: 0;
+  }
+
+  .carousel-item__subtitle {
+    font-size: 7pt;
+    letter-spacing: 0pt;
+  }
+
+  .carousel-item__title {
+    font-size: 14pt;
+    line-height: 16pt;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+
+  .project_slide_editorial {
+    position: relative;
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .post-tiles .single-tile .description .secondary {
+    font: normal 2vw 'Montserrat';
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .post-tiles .single-tile .description {
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    color: black;
+  }
+
+  .post-tiles, .shop-tiles {
+    margin-bottom: 0px;
+    clear: both;
+    font-size: 0;
+    padding-bottom: 0;
+  }
+
   .design_para_four {
     text-align: left;
     padding-left: 10%;
@@ -1918,7 +1982,16 @@ transform: translateX(0);
     background-image: linear-gradient(to right, rgb(164, 175, 167), rgb(194, 200, 196));
   }
 
+  .fashion_page {
+    background-image: linear-gradient(to right, rgb(164, 175, 167), rgb(194, 200, 196));
+  }
+
   .project_slide_atelier {
     background-image: linear-gradient(to right, rgb(164, 175, 167), rgb(194, 200, 196));
   }
+
+  .design_para_three {
+    background-image: linear-gradient(to right, rgb(129, 129, 129), rgb(184, 184, 184), rgb(180, 180, 180));
+  }
+
 }
