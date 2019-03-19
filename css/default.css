@@ -1349,7 +1349,7 @@ h2 {
   
   @media screen and (max-width: 569px) {
     #contact {
-      height: 1200px;
+      height: 100%;
       }
     .section-header{
       font-size: 50px;
@@ -1359,7 +1359,7 @@ h2 {
       margin: 0 auto;
     }  
     .form-control, textarea {
-      max-width: 340px;
+      max-width: 100%;
       margin: 0 auto;
     }
     
@@ -1369,7 +1369,7 @@ h2 {
     } 
     .direct-contact-container {
       margin-top: 60px;
-      max-width: 280px;
+      max-width: 100%;
     }  
     .social-media-list {
       left: 0;
@@ -1384,6 +1384,50 @@ h2 {
       width: 55px;
       height: 55px;
       line-height: 55px;
+    }
+
+    .contact-wrapper {
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+
+    .form-horizontal {
+      display: inline-block;
+      position: relative;
+      padding-top: 75px;
+    }
+    
+    .header {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 60px;
+    }
+    
+    .send-button {
+      width: 100%;
+    }
+
+    .list-item {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .social-media-list {
+      padding-left: 0;
+      font-size: 2rem;
+    }
+
+    .contact-text {
+      font: 300 12px 'Montserrat';
+      letter-spacing: 1.5px;
+      color: #bbb;
+      position: relative;
+      margin-left: 15px;
+    }
+
+    .fa-2x {
+      font-size: 14pt;
     }
     
   }
