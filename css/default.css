@@ -1126,18 +1126,23 @@ h2 {
   
   .contact-wrapper {
     margin: 0 auto;
+    padding-left: 17%;
+    padding-right: 17%;
     position: relative;
-    max-width: 1100px;
   }
   
   /* Begin Left Contact Page */
   .form-horizontal {
-    float: left;
+    /* float: left;
     margin-top: 100px;
-    max-width: 400px;
+    max-width: 400px; */
+    margin-top: 5vw;
+    max-width: 600px;
     font-family: 'Montserrat';
     font-weight: 400;
     transform: scale(1.25);
+    display: inline-block;
+    position: relative;
   }
 
   .contact-left, textarea {
@@ -1146,7 +1151,8 @@ h2 {
 
   .contact-left {    
     display: block;
-    width: 400px;
+    width: 100%;
+    min-width: 25vw;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -1158,8 +1164,9 @@ h2 {
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
 
-    #message {
+    .message {
       height: 200px;
+      margin: 0;
     }
 
     .btn-send {
@@ -1169,7 +1176,7 @@ h2 {
   .send-button {
     margin-top: 15px;
     height: 34px;
-    width: 400px;
+    width: 100%;
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
@@ -1191,6 +1198,7 @@ h2 {
   }
   
   .direct-contact-container {
+    display: inline-block;
     max-width: 400px;
     float: right;
     margin-top: 5px;
@@ -1201,7 +1209,7 @@ h2 {
     margin-top: 75px;
     list-style-type: none;
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 0;
   }
   
   .list-item {
@@ -1320,7 +1328,8 @@ h2 {
     }
     .direct-contact-container, .form-horizontal {
       float: none;
-      margin: 10px auto;
+      margin: 10px;
+      width: 100%;
     }  
     .direct-contact-container {
       margin-top: 60px;
@@ -1354,8 +1363,9 @@ h2 {
       margin: 0 auto;
     }
     
-    .name, .email, textarea {
-      width: 280px
+    .name, .email, .message textarea {
+      /* width: 280px; */
+      margin: 0 auto;
     } 
     .direct-contact-container {
       margin-top: 60px;
@@ -1379,10 +1389,49 @@ h2 {
   }
   
   @media screen and (max-width: 410px) {
+    .form-horizontal {
+      display: inline-block;
+      position: relative;
+      padding-top: 75px;
+    }
+    
+    .header {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 60px;
+    }
+    
+    #contact {
+      height: 100%;
+    }
+    
     .send-button {
-      width: 99%;
+      width: 100%;
+    }
+
+    .list-item {
+      max-width: 100%;
+    }
+  
+    .social-media-list {
+      padding-left: 0;
+      font-size: 1rem;
+    }
+
+    .contact-text {
+      font: 300 10px 'Montserrat';
+      letter-spacing: 1.5px;
+      color: #bbb;
+      position: relative;
+      margin-left: 15px;
+    }
+
+    .fa-2x {
+      font-size: 10pt;
     }
   }
+
 
   /* Editorial Page */
 
