@@ -1221,7 +1221,7 @@ h2 {
   .direct-contact-container {
     display: inline-block;
     max-width: 400px;
-    float: right;
+    /* float: right; */
     margin-top: 5px;
     transform: scale(1.25);
   }
