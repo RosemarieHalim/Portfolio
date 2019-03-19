@@ -240,7 +240,7 @@ html {
   margin-bottom: 0px;
   clear: both;
   font-size: 0;
-  padding-bottom: 30px;
+  padding-bottom: 5vw;
 }
 
 .post-tiles .wrap,
@@ -339,7 +339,7 @@ html {
 
 .post-tiles .single-tile .description .title {
   width: 100%;
-  height: 30px;
+  /* height: 30px; */
   font: normal 900 1.5vw 'Montserrat';
   padding-bottom: 0;
   overflow: hidden;
