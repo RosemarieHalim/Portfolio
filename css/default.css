@@ -1147,8 +1147,8 @@ h2 {
   
   .contact-wrapper {
     margin: 0 auto;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 23%;
+    padding-right: 24%;
     position: relative;
   }
   
@@ -1158,7 +1158,7 @@ h2 {
     margin-top: 100px;
     max-width: 400px; */
     margin-top: 5vw;
-    max-width: 600px;
+    /* max-width: 600px; */
     font-family: 'Montserrat';
     font-weight: 400;
     transform: scale(1.25);
@@ -1221,8 +1221,8 @@ h2 {
   .direct-contact-container {
     display: inline-block;
     max-width: 400px;
-    /* float: right; */
-    margin-top: 5px;
+    float: right;
+    margin-top: 1vw;
     transform: scale(1.25);
   }
   
