@@ -7,6 +7,10 @@ html {
   background: rgb(15, 14, 14);
 }
 
+.para {
+    colour: rgb(15, 14, 14);
+}
+
 /* Slider to switch Project Pages */
 
 .tile-image_motley {
