@@ -5,6 +5,7 @@ html {
 
 .pagestyle {
 background: #242424;
+height:100vh;
 }
 
 /* Slider to switch Project Pages */
@@ -481,7 +482,8 @@ height: 100%;
 }
 
 .frontpage {
-background-image: url(../assets/img/home_page.png)
+background-image: url(../assets/img/home_page.png);
+height: 100vh;
 }
 
 @-webkit-keyframes fadeInDown {
