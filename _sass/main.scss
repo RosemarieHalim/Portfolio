@@ -5,8 +5,7 @@ html {
 
 .pagestyle {
 background: rgb(15, 14, 14);
-// height:100vh;
-float: left;
+height:100%;
 }
 
 
@@ -37,6 +36,7 @@ font-size: 13pt;
 line-height: 23pt;
 text-align: left;
 color:rgb(255, 255, 255);
+// background: #0f0e0e;
 }
 
 .aboot_box {
@@ -115,11 +115,12 @@ vertical-align: 0 auto;
 .content_home {
 position: relative;
 top: 30%;
-float:left;
+// float:left;
 width:70%;
-margin:5% 15%;
+margin:5% 20%;
 padding:2em 0;
 color: #FFF;
+background: #0f0e0e;
 }
 
 
