@@ -5,7 +5,8 @@ html {
 
 .pagestyle {
 background: rgb(15, 14, 14);
-height:100vh;
+// height:100vh;
+float: left;
 }
 
 
@@ -126,9 +127,9 @@ color: #FFF;
 
 .content {
   float:left;
-  width:70%;
+  width:80%;
   margin:5% 15%;
-  color: #FFF;
+//   color: #FFF;
 }
 
 h1 {
@@ -758,7 +759,7 @@ p {
 
 .about {
   background: rgb(15, 14, 14);
-  height: 100vh; 
+  float: left;
 }
 
 .port-container {
