@@ -68,6 +68,8 @@ height: 100%;
 .frontpage {
 background-image: url(../img/home_page.png);
 height: 100vh;
+background-position-x: center;
+background-size: cover;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -183,7 +185,6 @@ letter-spacing: 3pt;
   display:flex;
   flex-flow: row wrap;
   justify-content:space-around;
-  padding: 5%;
   margin-top: 3vw;
 }
 
@@ -191,7 +192,6 @@ letter-spacing: 3pt;
 .form-horizontal {
   font-family: 'Montserrat';
   font-weight: 400;
-  transform: scale(1.25);
   display: inline-block;
   position: relative;
 }
@@ -248,10 +248,11 @@ letter-spacing: 3pt;
   transform: translate3d(0px, -29px, 0px);
 }
 
+/* Begin Right Contact Page *
+
 .direct-contact-container {
   display: inline-block;
   max-width: 400px;
-  transform: scale(1.25);
 }
 
 .contact-list {
