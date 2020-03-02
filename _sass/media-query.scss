@@ -46,7 +46,16 @@
   /* Contact Page*/
 
   @media screen and (max-width: 760px) {
-    #contact {
+      
+    .content {
+      float: left;
+      width: 70%;
+      margin: 0;
+      padding: 2em 0;
+      color: #FFF;
+      }
+    
+   #contact {
     height: 100%;
     width: 100%;
     background-color: #0f0e0e;
@@ -75,6 +84,15 @@
 }
 
 @media screen and (max-width: 569px) {
+    
+    .content {
+      float: left;
+      width: 70%;
+      margin: 0;
+      padding: 2em 0;
+      color: #FFF;
+      }
+    
   #contact {
     height: 100%;
     width: 100%;
